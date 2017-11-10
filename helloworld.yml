@@ -1,0 +1,9 @@
+---
+- name: This is hello world example
+  hosts: web
+  sudo: yes 
+  tasks:
+    - name: copy "html file" 
+      copy: src=/home/su/index.html dest=/var/www/html/index.html
+
+
